@@ -1,0 +1,27 @@
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingOne">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      Diretivas
+    </button>
+  </h2>
+  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#content">
+    <div class="accordion-body">
+      <p><strong>*NgIf</strong> é usado como uma validação padrão If, mas no Angular não possui o elemento else.</p>
+      <hr>
+      <p>
+        A seguir, veja o que é possível fazer como essa diretiva:
+        <br>
+        Caso eu não possua usuário posso mostrar uma mensagem de tratamento,
+        que neste caso é <em>"Você ainda não possui usuário em sua lista. Cliquei em adicionar para obter usuário(s)"</em>.
+        <br>
+        Caso seja ao contrário, irei mostrar a mensagem <em>"Você possui X usuário(s)". O valor X muda de acordo com o clique</em>.
+      </p>
+      <hr>
+      <h6>Vamos testar...</h6>
+      <p *ngIf="lista > 0">Você possui {{ lista }} usuário(s).</p>
+      <p *ngIf="lista == 0">Você ainda não possui usuário em sua lista. Cliquei em adicionar para obter usuário(s).</p>
+      <button class="btn btn-primary mr-2" (click)="adicionar()">Adicionar usuário</button>
+      <button class="btn btn-primary" (click)="limpar()">Limpar</button>
+    </div>
+  </div>
+</div>

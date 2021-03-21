@@ -126,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "loiane-training"
+    }
+  },
+  "defaultProject": "loiane-training",
+  "cli": {
+    "analytics": "2790fa77-a8ee-43d5-a848-744890aaf350"
+  }
 }
