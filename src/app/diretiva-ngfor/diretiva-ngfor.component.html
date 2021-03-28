@@ -1,0 +1,23 @@
+<div class="accordion-item">
+  <h2 class="accordion-header" id="flush-headingThree">
+    <button class="accordion-button collapsed" type="button"
+    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+    Ng For
+    </button>
+  </h2>
+  <div class="accordion-collapse collapse" id="flush-collapseThree"  aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body">
+      <p>
+        Nesse exemplo iremos usar o ngFor. Como um For comum de uma linguagem de programação, ele vai percorrer um
+        array de string e mostrar na tela os valores desse array.
+      </p>
+      <hr>
+      <h6>Lista de cursos usando ngFor:</h6>
+      <ul>
+        <li *ngFor="let curso of cursos">
+          {{ curso }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { ContentComponent } from './content/content.component';
+import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContentComponent } from './content/content.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     DiretivaNgifComponent,
-    ContentComponent
+    ContentComponent,
+    DiretivaNgswitchComponent,
+    DiretivaNgforComponent
   ],
   imports: [
     BrowserModule,
