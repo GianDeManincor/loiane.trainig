@@ -10,6 +10,8 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { ContentComponent } from './content/content.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcontent.component';
+import { ExemploNgcontentComponent } from './diretiva-ngcontent/exemplo-ngcontent/exemplo-ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     DiretivaNgifComponent,
     ContentComponent,
     DiretivaNgswitchComponent,
-    DiretivaNgforComponent
+    DiretivaNgforComponent,
+    DiretivaNgcontentComponent,
+    ExemploNgcontentComponent
   ],
   imports: [
     BrowserModule,
