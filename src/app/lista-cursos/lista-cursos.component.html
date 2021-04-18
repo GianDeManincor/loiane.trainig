@@ -1,0 +1,55 @@
+<section class="card mt-4">
+
+  <div class="card-header d-flex">
+    <div>Lista de cursos</div>
+    <div class="ajuste-button">
+      <button type="button" class="btn btn-primary" (click)="openNovoCurso()">Novo Curso</button>
+    </div>
+  </div>
+
+  <div class="card-body">
+
+    <div *ngIf="showTabela">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Título</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let curso of cursos">
+            <th scope="row">{{ curso.id }}</th>
+            <td>{{ curso.nome }}</td>
+            <td class="flex">
+              <div class="ajuste-button">
+                <button type="button" class="btn btn-secondary mr-2">Alterar</button>
+                <button type="button" class="btn btn-danger" (click)="deleteCourse(curso.id)">Excluir</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div *ngIf="showNovoCurso">
+      <form>
+        <div class="form-group">
+          <label class="t-negrito">Nome</label>
+          <input type="text" class="form-control" id="nomeCurso" placeholder="Nome do curso" [(ngModel)]="nomeCurso" name="nomeCurso">
+        </div>
+
+        <div class="d-flex">
+          <div class="ajuste-button">
+            <button type="submit" class="btn btn-secondary mr-2" (click)="novoCursoToTabela()">Voltar</button>
+            <button type="submit" class="btn btn-primary" (click)="createCourse()">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</section>
