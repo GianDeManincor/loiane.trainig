@@ -15,6 +15,8 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
 import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcontent.component';
 import { ExemploNgcontentComponent } from './diretiva-ngcontent/exemplo-ngcontent/exemplo-ngcontent.component';
 import { ListaCursosComponent } from './lista-cursos/lista-cursos.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ListaCursosComponent } from './lista-cursos/lista-cursos.component';
     DiretivaNgforComponent,
     DiretivaNgcontentComponent,
     ExemploNgcontentComponent,
-    ListaCursosComponent
+    ListaCursosComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule,
