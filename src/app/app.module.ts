@@ -17,6 +17,7 @@ import { ExemploNgcontentComponent } from './diretiva-ngcontent/exemplo-ngconten
 import { ListaCursosComponent } from './lista-cursos/lista-cursos.component';
 import { FundoAmareloDirective } from './shared/fundo-amarelo/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretiv
     ExemploNgcontentComponent,
     ListaCursosComponent,
     FundoAmareloDirective,
-    DiretivasCustomizadasComponent
+    DiretivasCustomizadasComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
